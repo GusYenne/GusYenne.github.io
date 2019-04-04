@@ -310,10 +310,17 @@
       
         
           
-            <p>著名电影《泰坦尼克号》是由真实事件改编，事件的发生引起全世界对航海安全问题的关注，在影片里女主萝丝就对救生设备不足等安全问题产生质疑，而这些救生设备就是生还者获救的关键，最终2224名乘客只有700多名幸存.<br><br>今天就需要预测哪一类人更有可能存活下来，</p>
-<h2 id="获取数据"><a href="#获取数据" class="headerlink" title="获取数据"></a>获取数据</h2><p>首先从kaggle官网搜索titanic项目在页面Data下载乘客数据<br><br><img src="https://imgchr.com/i/A2DUUI" alt><br><br>由于是kaggle比赛入门项目和Titanic事件的加成，参赛队伍竟已多达1万支<br><br><del>快住手，这根本就不是什么比赛</del></p>
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+            <p>著名电影《泰坦尼克号》是由真实事件改编，事件的发生引起全世界对航海安全问题的关注，在影片里女主萝丝就对救生设备不足等安全问题产生质疑，而这些救生设备是生还者获救的关键，也是酿成2224名乘客只有700多名幸存的悲剧.<br><br>今天就需要预测哪一类人更有可能存活下来，通过对数据的整理、清洗、构建模型</p>
+<h2 id="数据整理"><a href="#数据整理" class="headerlink" title="数据整理"></a>数据整理</h2><p>首先从kaggle官网搜索titanic项目在页面Data下载乘客数据<br><br><img src="https://i.loli.net/2019/04/04/5ca61c4aa6e31.png" alt><br><br>由于是kaggle比赛入门项目和Titanic事件的加成，参赛队伍已高达1万多支<br><br><del>快住手，这根本就不是什么比赛</del></p>
+<h3 id="导入数据"><a href="#导入数据" class="headerlink" title="导入数据"></a>导入数据</h3><pre><code>train =pd.read_csv(&quot;C:/Users/GuSu/Desktop/titanic/train.csv&quot;)
+test =pd.read_csv(&quot;C:/Users/GuSu/Desktop/titanic/test.csv&quot;)
+test.head(5) #显示test文本前五列数据
+</code></pre><p><img src="https://i.loli.net/2019/04/05/5ca636b7ba94f.png" alt></p>
+<pre><code>train =pd.read_csv(&quot;C:/Users/GuSu/Desktop/titanic/train.csv&quot;)
+test =pd.read_csv(&quot;C:/Users/GuSu/Desktop/titanic/test.csv&quot;)
+train.head(5) #显示train文本前五列数据
+</code></pre><p><img src="https://i.loli.net/2019/04/05/5ca637df7be86.png" alt><br>通过对两组数据的对比发现测试集少了survived生存字段<br><br><br></p>
+<p><img src="https://i.loli.net/2019/04/05/5ca6436f47617.png" alt><br>将两组数据集观察一下还是存在诸多异常值的</p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
