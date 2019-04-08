@@ -79,29 +79,26 @@
 
 
 
-<meta name="description" content="著名电影《泰坦尼克号》是由真实事件改编，事件的发生引起全世界对航海安全问题的关注，在影片里女主萝丝就对救生设备不足等安全问题产生质疑，而这些救生设备正是生还者获救的关键.今天就需要预测哪一类人更有可能使用这些设备生还，通过对数据的整理、清洗、构建模型、评估后的结果提交到kaggle官网 数据整理首先从kaggle官网搜索titanic项目在页面Data下载乘客数据由于是kaggle比赛入门项目和T">
+<meta name="description" content="想搬家买房子自己没头绪又不想去找中介，有没有什么方法能在短时间内一目了然呢答案是肯定的，首先用爬虫采集我爱我家在苏州所有二手房的房源数据，进一步地进行数据清洗，然后对清洗后的数据进行可视化分析，探索着对大量数据背后的规律，最后了解苏州二手房的具体分布特征和规律，帮助我们进行购房决策 爬取房源通过requests库进行网页请求，用正则解析我爱我家二手房17163条房源信息，并用多进程并发操作进程池P">
 <meta property="og:type" content="article">
-<meta property="og:title" content="泰坦尼克号生还者预测">
+<meta property="og:title" content="爬取苏州17163条房源进行数据分析">
 <meta property="og:url" content="http://yoursite.com/2019/03/31/hello-world/index.html">
 <meta property="og:site_name" content="GusYenne">
-<meta property="og:description" content="著名电影《泰坦尼克号》是由真实事件改编，事件的发生引起全世界对航海安全问题的关注，在影片里女主萝丝就对救生设备不足等安全问题产生质疑，而这些救生设备正是生还者获救的关键.今天就需要预测哪一类人更有可能使用这些设备生还，通过对数据的整理、清洗、构建模型、评估后的结果提交到kaggle官网 数据整理首先从kaggle官网搜索titanic项目在页面Data下载乘客数据由于是kaggle比赛入门项目和T">
+<meta property="og:description" content="想搬家买房子自己没头绪又不想去找中介，有没有什么方法能在短时间内一目了然呢答案是肯定的，首先用爬虫采集我爱我家在苏州所有二手房的房源数据，进一步地进行数据清洗，然后对清洗后的数据进行可视化分析，探索着对大量数据背后的规律，最后了解苏州二手房的具体分布特征和规律，帮助我们进行购房决策 爬取房源通过requests库进行网页请求，用正则解析我爱我家二手房17163条房源信息，并用多进程并发操作进程池P">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://i.loli.net/2019/04/04/5ca61c4aa6e31.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/05/5ca636b7ba94f.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/05/5ca637df7be86.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/05/5ca6436f47617.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/05/5ca6fb363db0b.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/05/5ca70fc765fe1.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/05/5ca713781dddc.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/05/5ca714a853728.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/05/5ca7067b429f7.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/05/5ca70805994fd.png">
-<meta property="og:image" content="https://i.loli.net/2019/04/05/5ca728bdd0246.png">
-<meta property="og:updated_time" content="2019-04-05T11:12:13.659Z">
+<meta property="og:image" content="https://i.loli.net/2019/04/08/5caa234694fea.png">
+<meta property="og:image" content="https://i.loli.net/2019/04/08/5caa236b105ba.png">
+<meta property="og:image" content="https://i.loli.net/2019/04/08/5caa35f885cac.png">
+<meta property="og:image" content="https://i.loli.net/2019/04/08/5caad06443aec.png">
+<meta property="og:image" content="https://i.loli.net/2019/04/08/5caa2a5a659dd.png">
+<meta property="og:image" content="https://i.loli.net/2019/04/09/5cab7305ce053.png">
+<meta property="og:image" content="https://i.loli.net/2019/04/09/5cab72f7c5553.png">
+<meta property="og:image" content="https://i.loli.net/2019/04/09/5cab72e754f2d.png">
+<meta property="og:updated_time" content="2019-04-08T16:21:42.578Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="泰坦尼克号生还者预测">
-<meta name="twitter:description" content="著名电影《泰坦尼克号》是由真实事件改编，事件的发生引起全世界对航海安全问题的关注，在影片里女主萝丝就对救生设备不足等安全问题产生质疑，而这些救生设备正是生还者获救的关键.今天就需要预测哪一类人更有可能使用这些设备生还，通过对数据的整理、清洗、构建模型、评估后的结果提交到kaggle官网 数据整理首先从kaggle官网搜索titanic项目在页面Data下载乘客数据由于是kaggle比赛入门项目和T">
-<meta name="twitter:image" content="https://i.loli.net/2019/04/04/5ca61c4aa6e31.png">
+<meta name="twitter:title" content="爬取苏州17163条房源进行数据分析">
+<meta name="twitter:description" content="想搬家买房子自己没头绪又不想去找中介，有没有什么方法能在短时间内一目了然呢答案是肯定的，首先用爬虫采集我爱我家在苏州所有二手房的房源数据，进一步地进行数据清洗，然后对清洗后的数据进行可视化分析，探索着对大量数据背后的规律，最后了解苏州二手房的具体分布特征和规律，帮助我们进行购房决策 爬取房源通过requests库进行网页请求，用正则解析我爱我家二手房17163条房源信息，并用多进程并发操作进程池P">
+<meta name="twitter:image" content="https://i.loli.net/2019/04/08/5caa234694fea.png">
 
 
 
@@ -137,7 +134,7 @@
 
 
 
-  <title>泰坦尼克号生还者预测 | GusYenne</title>
+  <title>爬取苏州17163条房源进行数据分析 | GusYenne</title>
   
 
 
@@ -271,7 +268,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">泰坦尼克号生还者预测</h1>
+          <h1 class="post-title" itemprop="name headline">爬取苏州17163条房源进行数据分析</h1>
         
 
         <div class="post-meta">
@@ -321,35 +318,85 @@
       
 
       
-        <p>著名电影《泰坦尼克号》是由真实事件改编，事件的发生引起全世界对航海安全问题的关注，在影片里女主萝丝就对救生设备不足等安全问题产生质疑，而这些救生设备正是生还者获救的关键.<br><br>今天就需要预测哪一类人更有可能使用这些设备生还，通过对数据的整理、清洗、构建模型、评估后的结果提交到kaggle官网</p>
-<h2 id="数据整理"><a href="#数据整理" class="headerlink" title="数据整理"></a>数据整理</h2><p>首先从kaggle官网搜索titanic项目在页面Data下载乘客数据<br><br><img src="https://i.loli.net/2019/04/04/5ca61c4aa6e31.png" alt><br>由于是kaggle比赛入门项目和Titanic事件的加成，参赛队伍已高达1万多支<br><br><del>快住手，这根本就不是什么比赛</del></p>
-<h3 id="导入数据"><a href="#导入数据" class="headerlink" title="导入数据"></a>导入数据</h3><pre><code>train =pd.read_csv(&quot;C:/Users/GuSu/Desktop/titanic/train.csv&quot;)
-test =pd.read_csv(&quot;C:/Users/GuSu/Desktop/titanic/test.csv&quot;)
-test.head(5) #显示test文本前五列数据
-</code></pre><p><img src="https://i.loli.net/2019/04/05/5ca636b7ba94f.png" alt></p>
-<pre><code>train =pd.read_csv(&quot;C:/Users/GuSu/Desktop/titanic/train.csv&quot;)
-test =pd.read_csv(&quot;C:/Users/GuSu/Desktop/titanic/test.csv&quot;)
-train.head(5) #显示train文本前五列数据
-</code></pre><p>通过对两组数据的对比发现测试集少了survived生存字段<br><img src="https://i.loli.net/2019/04/05/5ca637df7be86.png" alt><br>将两组数据集合并，观察一下发现还是存在诸多异常值的<br></p>
-<p><img src="https://i.loli.net/2019/04/05/5ca6436f47617.png" alt></p>
-<h3 id="数据预处理"><a href="#数据预处理" class="headerlink" title="数据预处理"></a>数据预处理</h3><p>用he.info()实现每一列的总数,可以发现数据的总数是1309行，其中age与cabin缺失较大，尤其是cabin缺失率达到了77%<br>在机器学习里scikit-learn中是不允许有缺失值的，为了达到建模的准确性需要对缺失数据进一步处理<br><img src="https://i.loli.net/2019/04/05/5ca6fb363db0b.png" alt></p>
-<p>大致查看survived与一个变量之间的关系，方便后面提取出有用的特征有助于构建模型<br><br>先看个最明显的性别<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">he[[<span class="string">"Sex"</span>,<span class="string">"Survived"</span>]].groupby(<span class="string">"Sex"</span>,as_index=False).mean().sort_values(<span class="string">"Survived"</span>,ascending=False)</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://i.loli.net/2019/04/05/5ca70fc765fe1.png" alt><br>女性的生还率明显是高于男性的，能在生死危机的时刻依然保持着绅士风度，这一点还是很佩服的.<br>除了性别还有名字里的头衔如Miss、Master、Mr等<br></p>
-<p>再观察Pclass,在Titanic号里船舱分三等也就是Pclass，代表着社会地位与身份<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">he[[<span class="string">"Pclass"</span>,<span class="string">"Survived"</span>]].groupby(<span class="string">"Pclass"</span>,as_index=False).mean().sort_values(by=<span class="string">"Survived"</span>,ascending=False)</span><br></pre></td></tr></table></figure></p>
-<p>可以看到头等舱明显是高于三等的，看来人还是要努力才行呀，努力才会有更多的选择<br><img src="https://i.loli.net/2019/04/05/5ca713781dddc.png" alt><br><img src="https://i.loli.net/2019/04/05/5ca714a853728.png" alt></p>
-<h3 id="数据清洗"><a href="#数据清洗" class="headerlink" title="数据清洗"></a>数据清洗</h3><p>为了预测准确度，这是使用fillna方法对数值类年龄和票价进行中位数填充<br>    he[‘Age’]=he[‘Age’].fillna( he[‘Age’].mean() )<br>    he[‘Fare’] = he[‘Fare’].fillna( he[‘Fare’].mean() )<br>    he.info()<br>港口Embarked用出现最多S来填充<br><img src="https://i.loli.net/2019/04/05/5ca7067b429f7.png" alt><br>而缺失值77%的Cabin用未知数”N”来代替,最终效果如下<br><img src="https://i.loli.net/2019/04/05/5ca70805994fd.png" alt></p>
-<h2 id="特征提取"><a href="#特征提取" class="headerlink" title="特征提取"></a>特征提取</h2><pre><code>corrDf = he.corr() 
-corrDf
-</code></pre><p><img src="https://i.loli.net/2019/04/05/5ca728bdd0246.png" alt></p>
-<p>图上已经加了许多特征了有些乱，通过ascending =False排出与生存的相关系数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">corrDf[<span class="string">'Survived'</span>].sort_values(ascending =False)</span><br></pre></td></tr></table></figure></p>
-<p>Survived       1.000000<br><br>Pclass_1       0.285904<br><br>Fare           0.257307<br><br>Cabin_B        0.175095<br><br>Embarked_C     0.168240<br><br>Cabin_D        0.150716<br><br>Cabin_E        0.145321<br><br>Cabin_C        0.114652<br><br>Pclass_2       0.093349<br><br>Parch          0.081629<br><br>Embarked_s     0.060095<br><br>Cabin_F        0.057935<br><br>Cabin_A        0.022287<br><br>Cabin_G        0.016040<br><br>Embarked_Q     0.003650<br><br>PassengerId   -0.005007<br><br>Cabin_T       -0.026456<br><br>SibSp         -0.035322<br><br>Age           -0.070323<br><br>Embarked_S    -0.155660<br><br>Cabin_n       -0.316912<br><br>Pclass_3      -0.322308<br><br>Sex           -0.543351<br></p>
-<p>选其中上面系数有些相关的PclassDf、Fare、cabinDf、embarkedDf和sex来作为模型<br>    he_X = pd.concat( [  pclassDf,<br>    he[‘Fare’],<br>    cabinDf,<br>    embarkedDf,<br>    he[‘Sex’],<br>    ]axis=1 )<br>    he_X.head()</p>
-<h2 id="构建模型"><a href="#构建模型" class="headerlink" title="构建模型"></a>构建模型</h2><p>构建模型前先导入sklearn.model_selection，早期机器学习教材里写的是cross_validation已停用改为sklearn.model_selection中调用train_test_split 函数即可<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from sklearn.model_selection import train_test_split</span><br></pre></td></tr></table></figure></p>
-<p>最后要用上机器学习的算法决策树随机森林 得分0.7877094972067039 kaggle官网0.75598<br>    决策树<br>    from sklearn.tree import DecisionTreeClassifier<br>    Classifier4 = DecisionTreeClassifier()<br>    Classifier4.fit(x_train,y_train)<br>    Y4_prediction = Classifier4.predict(x_test)<br>    score_Dtc = Classifier4.score(x_train,y_train)<br>    score_Dtc<br>    随机森林<br>    from sklearn.ensemble import RandomForestClassifier<br>    Classifier5 = RandomForestClassifier(n_estimators=100)<br>    Classifier5.fit(x_train,y_train)<br>    Y5_prediction = Classifier5.predict(x_test)<br>    模型评估<br>    score_Rfc = Classifier5.score(x_train,y_train)<br>    score_Rfc</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
-<li>断断续续的终于完工了，虽然只是走个机器学习的流程但收获还是不少的，对数据处理的流程、异常值的处理，还有数据的理解都有一定的熟悉</li>
-<li>对机器学习算法和提取特征还只停留在表面没有深入了解，这一点还需要多多深入的去学习</li>
+        <p>想搬家买房子自己没头绪又不想去找中介，有没有什么方法能在短时间内一目了然呢<br><br>答案是肯定的，首先用爬虫采集我爱我家在苏州所有二手房的房源数据，进一步地进行数据清洗，然后对清洗后的数据进行可视化分析，探索着对大量数据背后的规律，最后了解苏州二手房的具体分布特征和规律，帮助我们进行购房决策</p>
+<h2 id="爬取房源"><a href="#爬取房源" class="headerlink" title="爬取房源"></a>爬取房源</h2><p>通过requests库进行网页请求，用正则解析我爱我家二手房17163条房源信息，并用多进程并发操作进程池Pool进行辅助</p>
+<pre><code>import time
+import requests
+from requests.exceptions import RequestException
+from multiprocessing import Pool
+import re
+import json
+
+def get_one_page(url):
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            return response.text
+        return None
+    except RequestException:
+        return None
+
+def parse_one_page(html):
+    pattern = re.compile(
+        &apos;&lt;/h3&gt;.*?--&gt;\n.*?&lt;/i&gt;(.*?)&lt;/p&gt;.*?target=&quot;_blank&quot;&gt;(.*?)&lt;/a&gt;.*?class=&quot;redC&quot;.*?&gt;(\d+)&lt;/strong&gt;.*?&lt;p&gt;单价(\d+).*?&lt;/h3&gt;&apos;,
+        re.S)
+    items = re.findall(pattern, str(html))
+    for items in items:
+        yield {
+            &quot;户型&quot;: items[0],
+            &quot;地区&quot;: items[1],
+            &quot;价格&quot;: items[2],
+            &quot;单价&quot;: items[3],
+        }
+
+
+def write_to_file(content):
+    with open(&quot;spiderhouse.text&quot;, &quot;a&quot;, encoding=&quot;utf-8&quot;) as f:
+        f.write(json.dumps(content, ensure_ascii=False) + &apos;\n&apos;)
+        f.close()
+
+
+def main(n):
+    url = &apos;https://sz.5i5j.com/ershoufang/n&apos; + str(n)
+    html = get_one_page(url)
+    for item in parse_one_page(html):
+        print(item)
+        write_to_file(item)
+
+
+if __name__ == &apos;__main__&apos;:
+    pool = Pool(processes=50)
+    for i in range(5000):
+        main(i + 1)
+        time.sleep(3.5)
+</code></pre><h3 id="爬虫反爬"><a href="#爬虫反爬" class="headerlink" title="爬虫反爬"></a>爬虫反爬</h3><ul>
+<li>在许多房源网都存在着反爬措施，出现最多的反爬就是只给你显示100页的房源，面对这种问题依次爬苏州各大区的链接逐个对链接爬取即可</li>
+<li>爬取房源过多或速度过快会转到对方的验证码反爬机制，从而导致爬虫的失败无响应，解决办法有以下几点</li>
 </ul>
+<ol>
+<li>爬虫每请求一次url定时休息3-5秒，控制爬取的速度</li>
+<li><p>通过代理伪装成多台电脑访问，代理可参考<a href="https://github.com/jhao104/proxy_pool" target="_blank" rel="noopener">jh104</a>设计的代理池<br>##数据整理</p>
+<h3 id="数据清洗"><a href="#数据清洗" class="headerlink" title="数据清洗"></a>数据清洗</h3><p>信息采集完毕后有许多文本错位、数据拥挤等”脏”数据，这里通过Excel对采集下来的信息进行清洗<br><img src="https://i.loli.net/2019/04/08/5caa234694fea.png" alt><br>用Excel清洗后<br><img src="https://i.loli.net/2019/04/08/5caa236b105ba.png" alt></p>
+<h3 id="数据质量"><a href="#数据质量" class="headerlink" title="数据质量"></a>数据质量</h3><p>为了确保数据的精准度将清洗完毕导入python用pandas、numpy库对数据进行总体质量分析，对异常值空值进行处理等，提升数据的质量为接下来的数据可视化做良好的铺垫<br><br>下面用pandas.read_excel库导入excel文件，查看整体数据</p>
+<p> import pandas as pd<br> import numpy as np<br> data = “C:/Users/GuSu/Desktop/data/spiderhouse.xlsx”<br> salesDf = pd.read_excel(data,sheet_name=’sheet1’,dtype=str)<br> salesDf.info()</p>
+</li>
+</ol>
+<p>图中可以看到有三项关键数据轻度的缺失和无关数据”优点”外，其余数据都是齐全的，总体的来说数据质量还是挺不错的<br><img src="https://i.loli.net/2019/04/08/5caa35f885cac.png" alt><br>进一步清洗转换的结果如下</p>
+<pre><code>salesDf[&quot;装修程度&quot;] =salesDf[&quot;装修程度&quot;].fillna(&quot;精装&quot;)
+salesDf[&apos;建筑面积/m²&apos;] = salesDf[&apos;建筑面积/m²&apos;].astype(&apos;float&apos;)
+salesDf[&apos;房屋总价/万&apos;] = salesDf[&apos;房屋总价/万&apos;].astype(&apos;float&apos;)
+salesDf[&apos;单价/m²&apos;] = salesDf[&apos;单价/m²&apos;].astype(&apos;float&apos;)
+querySer=salesDf.loc[:,&apos;建筑面积/m²&apos;]&gt;20
+salesDf=salesDf.loc[querySer,:]
+salesDf=salesDf.dropna(subset=[&apos;小区&apos;],how=&apos;any&apos;)
+salesDf[&quot;房屋朝向&quot;] =salesDf[&quot;房屋朝向&quot;].fillna(&quot;南北&quot;)
+salesDf.info()
+</code></pre><p><img src="https://i.loli.net/2019/04/08/5caad06443aec.png" alt></p>
+<p>##数据可视化<br>大量的数据经过数据整理清洗完毕后做成可视化，该阶段可以帮助我们更清晰，更直观的了解苏州房源背后的规律，本文主要是对房源的总价、单价、面积、户型、地区等属性进行了分析。</p>
+<h3 id="图标可视化"><a href="#图标可视化" class="headerlink" title="图标可视化"></a>图标可视化</h3><p>先上图词云，卖家词量出现频率最高的”南北通透诚心出售” 押韵✔<br><img src="https://i.loli.net/2019/04/08/5caa2a5a659dd.png" alt></p>
+<p>幂律分布整体朝向南很符合我们的认知<br><img src="https://i.loli.net/2019/04/09/5cab7305ce053.png" alt></p>
+<p>郭襄的房源是陆慕的两倍，其他房源基本持平<br><img src="https://i.loli.net/2019/04/09/5cab72f7c5553.png" alt></p>
+<p>可以看到苏州二手房子都是自己装修过的，比毛胚高出五倍，严重的偏态了<br><img src="https://i.loli.net/2019/04/09/5cab72e754f2d.png" alt></p>
 
       
     </div>
@@ -370,6 +417,22 @@ corrDf
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/06/SQL常用命令/" rel="prev" title="泰坦尼克号生还者预测">
+                泰坦尼克号生还者预测 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -445,7 +508,7 @@ corrDf
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -482,7 +545,7 @@ corrDf
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据整理"><span class="nav-number">1.</span> <span class="nav-text">数据整理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#导入数据"><span class="nav-number">1.1.</span> <span class="nav-text">导入数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据预处理"><span class="nav-number">1.2.</span> <span class="nav-text">数据预处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据清洗"><span class="nav-number">1.3.</span> <span class="nav-text">数据清洗</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特征提取"><span class="nav-number">2.</span> <span class="nav-text">特征提取</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#构建模型"><span class="nav-number">3.</span> <span class="nav-text">构建模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">3.1.</span> <span class="nav-text">总结</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#爬取房源"><span class="nav-number">1.</span> <span class="nav-text">爬取房源</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#爬虫反爬"><span class="nav-number">1.1.</span> <span class="nav-text">爬虫反爬</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据清洗"><span class="nav-number">1.2.</span> <span class="nav-text">数据清洗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据质量"><span class="nav-number">1.3.</span> <span class="nav-text">数据质量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图标可视化"><span class="nav-number">1.4.</span> <span class="nav-text">图标可视化</span></a></li></ol></li></ol></div>
             
 
           </div>
