@@ -82,7 +82,7 @@
 <meta name="description" content="想搬家买房子自己没头绪又不想去找中介，有没有什么方法能在短时间内一目了然呢答案是肯定的，首先用爬虫采集我爱我家在苏州所有二手房的房源数据，进一步地进行数据清洗，然后对清洗后的数据进行可视化分析，探索着对大量数据背后的规律，最后了解苏州二手房的具体分布特征和规律，帮助我们进行购房决策 爬取房源通过requests库进行网页请求，用正则解析我爱我家二手房17163条房源信息，并用多进程并发操作进程池P">
 <meta property="og:type" content="article">
 <meta property="og:title" content="爬取苏州17163条房源进行数据分析">
-<meta property="og:url" content="http://yoursite.com/2019/03/31/hello-world/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/03/31/house/index.html">
 <meta property="og:site_name" content="GusYenne">
 <meta property="og:description" content="想搬家买房子自己没头绪又不想去找中介，有没有什么方法能在短时间内一目了然呢答案是肯定的，首先用爬虫采集我爱我家在苏州所有二手房的房源数据，进一步地进行数据清洗，然后对清洗后的数据进行可视化分析，探索着对大量数据背后的规律，最后了解苏州二手房的具体分布特征和规律，帮助我们进行购房决策 爬取房源通过requests库进行网页请求，用正则解析我爱我家二手房17163条房源信息，并用多进程并发操作进程池P">
 <meta property="og:locale" content="zh-Hans">
@@ -98,7 +98,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/04/09/5caba1a9cd6b0.png">
 <meta property="og:image" content="https://i.loli.net/2019/04/09/5caba5302988e.png">
 <meta property="og:image" content="https://i.loli.net/2019/04/09/5cabaa67a0763.png">
-<meta property="og:updated_time" content="2019-04-08T20:42:41.016Z">
+<meta property="og:updated_time" content="2019-04-09T12:59:33.051Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="爬取苏州17163条房源进行数据分析">
 <meta name="twitter:description" content="想搬家买房子自己没头绪又不想去找中介，有没有什么方法能在短时间内一目了然呢答案是肯定的，首先用爬虫采集我爱我家在苏州所有二手房的房源数据，进一步地进行数据清洗，然后对清洗后的数据进行可视化分析，探索着对大量数据背后的规律，最后了解苏州二手房的具体分布特征和规律，帮助我们进行购房决策 爬取房源通过requests库进行网页请求，用正则解析我爱我家二手房17163条房源信息，并用多进程并发操作进程池P">
@@ -132,7 +132,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/03/31/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/31/house/">
 
 
 
@@ -255,7 +255,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/31/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/31/house/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="GusYenne">
@@ -379,8 +379,8 @@ if __name__ == &apos;__main__&apos;:
 </ul>
 <ol>
 <li>爬虫每请求一次url定时休息3-5秒，控制爬取的速度</li>
-<li><p>通过代理伪装成多台电脑访问，代理可参考<a href="https://github.com/jhao104/proxy_pool" target="_blank" rel="noopener">jh104</a>设计的代理池<br>##数据整理</p>
-<h3 id="数据清洗"><a href="#数据清洗" class="headerlink" title="数据清洗"></a>数据清洗</h3><p>信息采集完毕后有许多文本错位、数据拥挤等”脏”数据，这里通过Excel对采集下来的信息进行清洗<br><img src="https://i.loli.net/2019/04/08/5caa234694fea.png" alt><br>用Excel清洗后<br><img src="https://i.loli.net/2019/04/08/5caa236b105ba.png" alt></p>
+<li><p>通过代理伪装成多台电脑访问，代理可参考<a href="https://github.com/jhao104/proxy_pool" target="_blank" rel="noopener">jh104</a>设计的代理池</p>
+<h2 id="数据整理"><a href="#数据整理" class="headerlink" title="数据整理"></a>数据整理</h2><h3 id="数据清洗"><a href="#数据清洗" class="headerlink" title="数据清洗"></a>数据清洗</h3><p>信息采集完毕后有许多文本错位、数据拥挤等”脏”数据，这里通过Excel对采集下来的信息进行清洗<br><img src="https://i.loli.net/2019/04/08/5caa234694fea.png" alt><br>用Excel清洗后<br><img src="https://i.loli.net/2019/04/08/5caa236b105ba.png" alt></p>
 <h3 id="数据质量"><a href="#数据质量" class="headerlink" title="数据质量"></a>数据质量</h3><p>为了确保数据的精准度将清洗完毕导入python用pandas、numpy库对数据进行总体质量分析，对异常值空值进行处理等，提升数据的质量为接下来的数据可视化做良好的铺垫<br><br>下面用pandas.read_excel库导入excel文件，查看整体数据</p>
 <p> import pandas as pd<br> import numpy as np<br> data = “C:/Users/GuSu/Desktop/data/spiderhouse.xlsx”<br> salesDf = pd.read_excel(data,sheet_name=’sheet1’,dtype=str)<br> salesDf.info()</p>
 </li>
@@ -396,7 +396,7 @@ salesDf=salesDf.dropna(subset=[&apos;小区&apos;],how=&apos;any&apos;)
 salesDf[&quot;房屋朝向&quot;] =salesDf[&quot;房屋朝向&quot;].fillna(&quot;南北&quot;)
 salesDf.info()
 </code></pre><p><img src="https://i.loli.net/2019/04/08/5caad06443aec.png" alt></p>
-<p>##数据可视化<br>大量的数据经过数据整理清洗完毕后做成可视化，该阶段可以帮助我们更清晰，更直观的了解苏州房源背后的规律，本文主要是对房源的总价、单价、面积、户型、地区等属性进行了分析。</p>
+<h2 id="数据可视化"><a href="#数据可视化" class="headerlink" title="数据可视化"></a>数据可视化</h2><p>大量的数据经过数据整理清洗完毕后做成可视化，该阶段可以帮助我们更清晰，更直观的了解苏州房源背后的规律，本文主要是对房源的总价、单价、面积、户型、地区等属性进行了分析。</p>
 <h3 id="图词云"><a href="#图词云" class="headerlink" title="图词云"></a>图词云</h3><p>先上图词云，卖家词量出现频率最高的”南北通透诚心出售” 押韵✔<br><img src="https://i.loli.net/2019/04/08/5caa2a5a659dd.png" alt></p>
 <h3 id="散点图"><a href="#散点图" class="headerlink" title="散点图"></a>散点图</h3><p>散点图X轴为房子面积Y轴房屋总价，可以清晰的看到面积和价钱是成正线性相关的</p>
 <p><img src="https://i.loli.net/2019/04/09/5cab9d24b8cda.png" alt></p>
@@ -442,8 +442,8 @@ salesDf.info()
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/06/SQL常用命令/" rel="prev" title="泰坦尼克号生还者预测">
-                泰坦尼克号生还者预测 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/04/06/SQL常用命令/" rel="prev" title="SQL笔记">
+                SQL笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -523,7 +523,7 @@ salesDf.info()
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -560,7 +560,7 @@ salesDf.info()
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#爬取房源"><span class="nav-number">1.</span> <span class="nav-text">爬取房源</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#爬虫反爬"><span class="nav-number">1.1.</span> <span class="nav-text">爬虫反爬</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据清洗"><span class="nav-number">1.2.</span> <span class="nav-text">数据清洗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据质量"><span class="nav-number">1.3.</span> <span class="nav-text">数据质量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图词云"><span class="nav-number">1.4.</span> <span class="nav-text">图词云</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#散点图"><span class="nav-number">1.5.</span> <span class="nav-text">散点图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#房屋朝向"><span class="nav-number">1.6.</span> <span class="nav-text">房屋朝向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#装修程度"><span class="nav-number">1.7.</span> <span class="nav-text">装修程度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#房屋户型"><span class="nav-number">1.8.</span> <span class="nav-text">房屋户型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#区单价"><span class="nav-number">1.9.</span> <span class="nav-text">区单价</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#均面积"><span class="nav-number">1.10.</span> <span class="nav-text">均面积</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">2.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#爬取房源"><span class="nav-number">1.</span> <span class="nav-text">爬取房源</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#爬虫反爬"><span class="nav-number">1.1.</span> <span class="nav-text">爬虫反爬</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据整理"><span class="nav-number">2.</span> <span class="nav-text">数据整理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据清洗"><span class="nav-number">2.1.</span> <span class="nav-text">数据清洗</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据质量"><span class="nav-number">2.2.</span> <span class="nav-text">数据质量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据可视化"><span class="nav-number">3.</span> <span class="nav-text">数据可视化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图词云"><span class="nav-number">3.1.</span> <span class="nav-text">图词云</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#散点图"><span class="nav-number">3.2.</span> <span class="nav-text">散点图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#房屋朝向"><span class="nav-number">3.3.</span> <span class="nav-text">房屋朝向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#装修程度"><span class="nav-number">3.4.</span> <span class="nav-text">装修程度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#房屋户型"><span class="nav-number">3.5.</span> <span class="nav-text">房屋户型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#区单价"><span class="nav-number">3.6.</span> <span class="nav-text">区单价</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#均面积"><span class="nav-number">3.7.</span> <span class="nav-text">均面积</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
