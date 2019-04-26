@@ -98,7 +98,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/04/09/5caba1a9cd6b0.png">
 <meta property="og:image" content="https://i.loli.net/2019/04/09/5caba5302988e.png">
 <meta property="og:image" content="https://i.loli.net/2019/04/09/5cabaa67a0763.png">
-<meta property="og:updated_time" content="2019-04-09T12:59:33.051Z">
+<meta property="og:updated_time" content="2019-04-26T18:59:56.357Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="爬取苏州17163条房源进行数据分析">
 <meta name="twitter:description" content="想搬家买房子自己没头绪又不想去找中介，有没有什么方法能在短时间内一目了然呢答案是肯定的，首先用爬虫采集我爱我家在苏州所有二手房的房源数据，进一步地进行数据清洗，然后对清洗后的数据进行可视化分析，探索着对大量数据背后的规律，最后了解苏州二手房的具体分布特征和规律，帮助我们进行购房决策 爬取房源通过requests库进行网页请求，用正则解析我爱我家二手房17163条房源信息，并用多进程并发操作进程池P">
@@ -405,11 +405,12 @@ salesDf.info()
 <h3 id="房屋户型"><a href="#房屋户型" class="headerlink" title="房屋户型"></a>房屋户型</h3><p>3室2厅2户型最多与其它四种户型不分伯仲可谓是旗鼓相当<br><img src="https://i.loli.net/2019/04/09/5caba039f22ba.png" alt></p>
 <h3 id="区单价"><a href="#区单价" class="headerlink" title="区单价"></a>区单价</h3><p>苏州单价TOP基本上都被园区承包了，湖景房玲珑排在第一也是预料之中，大部分小区都稳定在2.3万-2.8万/m²吴中大部分垫底在 2.3万/m²以下<br><img src="https://i.loli.net/2019/04/09/5caba1a9cd6b0.png" alt><br><img src="https://i.loli.net/2019/04/09/5caba5302988e.png" alt></p>
 <h3 id="均面积"><a href="#均面积" class="headerlink" title="均面积"></a>均面积</h3><p>除了双湖西山别墅小区之外，大部分都分布在80-120/m²<br><img src="https://i.loli.net/2019/04/09/5cabaa67a0763.png" alt></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>根据以上15000多条数据可视化进行分析，可以大致判断以下四类：</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>苏州市在售二手房最贵小区玲珑均价60k/m²，最低小区是在相城北桥16K/m²。</p>
+<p>根据以上15000多条数据可视化进行分析，可以大致判断以下四类：</p>
 <ul>
-<li>已工业园区为首的豪华型，面积大地段好,又处于苏州最繁华的中心，这类比较集中主要分布在双湖苏州中心等</li>
-<li>古城区的轻便型，位于市中心地段好，交通方便，唯一缺点就是总体房子面积相对要小一点</li>
-<li>第三类是以</li>
+<li>已工业园区为首的豪华型，面积大地段好,又处于苏州最繁华的中心，主要分布东环路以东围绕金鸡湖</li>
+<li>古城区的轻便型，位于市中心地段好，交通方便，缺点是总体房子面积相对要小一点</li>
+<li>第三类是以吴中区相城区的性价比蜗居型，房子小地方偏，但有地铁交通方便</li>
 <li></li>
 </ul>
 
